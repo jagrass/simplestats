@@ -4,3 +4,6 @@ def mean(vals):
 	return total/length
 
 # print mean([2,4])
+
+def std(vals):
+	return 1.0
