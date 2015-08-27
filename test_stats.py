@@ -26,7 +26,7 @@ def test_neg_mean():
 ###
 
 def test_std1():
-	obs = std([0.0,0.2])
+	obs = std([0.0,2.0])
 	exp = 1.0
 	assert_equal(obs,exp)
 
