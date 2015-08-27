@@ -1,10 +1,13 @@
-from stats import mean # do not need to call stats.py
+from stats import mean 
+# do not need to call stats.py
+
+from nose.tools import assert_equal
 
 def test_mean():
-        assert(mean([2,4]) ==3) 
+        assert_equal(mean([2,4]), 3) 
         # check to see if statment is true
         # nothing will happen if true
-test_mean()
+# test_mean()
 
 ###
 
@@ -12,10 +15,11 @@ def test_float_mean():
         assert(mean([1,2]) == 1.5)
         # same idea as above - different answer
         # result in an error
-test_float_mean()
+# test_float_mean()
 
 ###
 
 def test_neg_mean():
 	assert(mean([-2,2,4]) == 1.333)
-test_neg_mean()
+# test_neg_mean()
+
